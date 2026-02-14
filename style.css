@@ -7,10 +7,9 @@
 body {
     background-color: #000;
     color: #ffffff;
-    font-family: Arial, sans-serif;
 }
 
-/* Top Navigation */
+/* --------------------------------------Top Navigation------------------------------------- */
 .top-nav {
     background-color: #000;
     padding: 15px 20px;
@@ -19,7 +18,7 @@ body {
 
 .nav-container {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +46,7 @@ body {
     color: #ff6b00;
 }
 
-/* Hero Section */
+/* -----------------------------------------------Hero Section------------------------------------------------- */
 .hero-section {
     background-color: #000;
     padding: 0;
@@ -72,12 +71,6 @@ body {
     height: 200px;
     cursor: pointer;
     transition: transform 0.3s;
-    overflow: hidden;
-}
-
-.movie-poster:hover {
-    transform: scale(1.05);
-    z-index: 10;
 }
 
 .movie-poster img {
@@ -87,17 +80,18 @@ body {
     display: block;
 }
 
-/* Secondary Navigation */
+/* ---------Secondary Navigation------------ */
 .secondary-nav {
-    background-color: #000;
-    padding: 10px 0;
+    justify-items: center;
+    background-color: #ff0000;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #333;
 }
 
 .secondary-nav-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1400px;    
+    
     display: flex;
     align-items: center;
     gap: 10px;
@@ -140,15 +134,13 @@ body {
     display: flex;
 }
 
-.search-box input {
+.search-box  {
     background-color: #000;
     border: 1px solid #333;
+    padding: 5px;
     color: #fff;
-    padding: 10px 15px;
     border-radius: 5px;
-    width: 250px;
     font-size: 14px;
-    outline: none;
     transition: border-color 0.3s;
 }
 
@@ -160,7 +152,11 @@ body {
     color: #888;
 }
 
-/* Warning Banner */
+
+
+/* ------- Warning Banner--------- */
+
+
 .warning-banner {
     background: linear-gradient(90deg, #1a1a1a 0%, #2a2a2a 100%);
     padding: 15px 20px;
@@ -238,70 +234,4 @@ body {
     font-size: 16px;
     margin: 0;
     text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .nav-links {
-        gap: 20px;
-    }
-    
-    .nav-link {
-        font-size: 14px;
-    }
-    
-    .releases-grid {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-        gap: 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-    
-    .secondary-nav-container {
-        justify-content: center;
-    }
-    
-    .search-box {
-        margin-left: 0;
-        width: 100%;
-    }
-    
-    .search-box input {
-        width: 100%;
-    }
-    
-    .releases-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 10px;
-    }
-    
-    .release-card img {
-        height: 220px;
-    }
-}
-
-@media (max-width: 480px) {
-    .movie-poster {
-        width: 100px;
-        height: 150px;
-    }
-    
-    .releases-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .section-header h2 {
-        font-size: 22px;
-    }
 }
